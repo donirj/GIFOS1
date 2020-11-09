@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="barra">
+            </div>
+        
+            <div class="row">
+                <div class="logo1"> 
+                    <img class="logo1" src="assets/scripts/logo-mobile.svg" alt="logo1">
+                </div>
+                <div class="hamIcon" onclick="toggleClass()">
+                    <img src="./assets/scripts/burger.svg" alt="">
+
+                </div>
+       
+
+                <ul class="mainMenu">
+                    <li class="dark" >Modo Nocturno</li>
+                    <li><a class="nav2" href="Favoritos">Favoritos</a></li>
+                    <li><a class="nav2" href="Mis GIFOS">Mis GIFOS</a></li>
+                    <img src="./assets/scripts/" alt="">
+                </ul>
+            </div>
+
+            <div class="container3">
+                <h1 class="inspirate colordetexto">
+                    Inspirate, busca, guarda y crea los mejores GIFOS
+                </h1>
+
+                <div class="ilu">
+                    <label for="menu-toggle">
+                        <img class="ilustra" src="assets/scripts/ilustra_header.svg" alt="ilustra">
+                    </label>
+                </div>
+
+                
+                <div class="search">
+                    <input type="search" class="searchbox" placeholder="Busca GIFOS y más" id="search">
+                    <img alt="" class="searchicon">
+                    <input class="btn" type="submit" value="Buscar" id="btn">
+                
+                </div>
+
+                <div class="trending1">
+                    <p class="trending1">
+                        Trending: 
+                    </p>
+                </div>
+                
+                <div class="reactions">
+                    <p class="reactions">
+                        Reactions, Entertainment, 
+                        Sports, Sticker, Artist
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="searchGIFOS">
+        
+        <video class="gif" id="gif" autoplay="true" loop="true"></video>
+        <script>
+
+            document.getElementById('btn').addEventListener('click',function(){
+            
+                var keyword = document.getElementById('search').value;
+            
+                Giphy.getUrlAsync(keyword,function(videoURL){
+                    document.getElementById('gif').src = videoURL;
+                })
+            
+            });
+            
+        </script>
+
+    </section>
+
+    <section class="trendingGIFOS">
+        <div>
+            <p class="trend1">Trending GIFOS</p>
+        </div>
+        <div>
+            <p class="trend2">Mira los últimos GIFOS de nuestra comunidad</p>
+        </div>
+
+        <div class="trending"  id="trending">
+
+        </div>
+
+    </section>
+
+    
+    <footer class="footer">
+        <div>
+            <p class="compartir">Compartir en:</p>
+        </div>
+        <div class="icon">
+            <a href="https://es-la.facebook.com/" target="_blank" class="icon2"><i class="fa fa-facebook" ></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="icon2"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" class="icon2"><i class="fa fa-twitter "></i></a>
+        <div>
+            <p class="copyright">© GIFOS 2020 All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/services/gifos.js"></script>
+</body>
+</html>
