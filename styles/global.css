@@ -1,0 +1,472 @@
+/*
+*   Inicio Mobile
+*/
+.colordetexto{
+    color: #572EE5;
+  }
+  .textonoche{
+    color: white;
+  }
+  
+  
+  @media(max-width: 768px){
+    .barra{
+      height: 5px;
+      background-color: #572EE5;
+    }  
+  
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    .mainMenu{
+      display: none;
+      background:  #572EE5;
+     opacity:0.9;
+      list-style-type: none;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding-top: 0px;
+      transform: translateY(50px);
+      
+  
+    }
+  
+      
+    .li{
+      display: flex;
+      justify-content: center;
+    
+    }
+  
+    .dark{
+      font-family: 'Montserrat', sans-serif;
+      color: #572EE5;
+      
+    }
+  
+    .dark{
+      color: #FFFFFF;
+      size: 16px;
+      font-family: 'Montserrat', sans-serif;  
+      margin: 50px;
+    }
+  
+    .nav2{
+      color: #FFFFFF;
+      size: 16px;
+      font-family: 'Montserrat', sans-serif; 
+     
+    }
+  
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .mainMenu.toggleCls{
+      display: block;
+    }
+  
+    .container3{
+      
+    }
+  
+    .inspirate{
+      font-family: 'Montserrat', sans-serif;
+      /*
+      color: #572EE5;
+      */
+      size: 35px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .ilustra{
+      width: 273px;
+      height: 130px;
+  
+    }
+  
+    .ilu{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .searchbox{
+      border: none;
+      background: transparent;
+      margin-left: 50px;
+      margin-top: 14px;
+      height: 22px;
+      width: 210px;
+      size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .searchicon{
+      padding-right: 20px;
+    }
+  
+    .search{
+      border: 1px solid #572EE5;
+      border-radius: 27px;
+      width: 334px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .searchbox{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .trending1{
+      color: #572EE5;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+  
+    .reactions{
+      color: #572EE5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .btn{
+      background: transparent;
+      background: url('/assets/scripts/icon-search.svg');
+      background-repeat: no-repeat;
+      font-size:0;
+      border: hidden;
+      padding: 15px;
+      
+    }
+  
+    .container3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .searchGIFOS{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /*
+    *   dark mode
+    */
+  
+    .darkmode{
+      background-color: black;
+      color: white; 
+  
+  
+    }
+  
+    /*
+    *   Sección search
+    */
+  
+  
+    .gif{
+      width: 243px;
+      height: 187px;
+    }
+  
+    /*
+    *   Sección trending
+    */
+  
+    .trendingGIFOS{
+      background-color: #F3F5F8;
+      height: 430px;
+      width: 100%;
+    }
+  
+    .trend1{
+      color: #572EE5;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .trend2{
+      color: #000000;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .trending{
+  
+      height: 187px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    /*
+    *   Sección footer
+    */
+  
+    .footer{
+      height: 196px;
+      background-color: #FFFFFF ;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .compartir{
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    .icon{
+      align-items: center; 
+      
+  
+    }
+  
+    .icon2{
+      align-items: center; 
+      color: #CDD6E0;
+      padding: 10px;
+    }
+  
+    .copyright{
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      text-align: center;
+    }
+  
+  
+  }
+  
+  /*
+  *   Fin mobile
+  */
+  
+  
+  /*
+  *   Inicio Desktop
+  */
+  
+  @media(min-width: 769px){
+    .body{
+      margin: 0px;
+    }
+  
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .barra{
+      height: 5px;
+      background-color: #572EE5;
+      
+    }  
+  
+    .logo1{
+      height: 59.1px;
+      width: 59.1px;
+    }
+  
+    .hamIcon{
+      display: none;
+    }
+  
+    .mainMenu{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      list-style: none; 
+      list-style-type: none;
+      padding-right: 5px;
+    }
+    .nav2{
+      padding: 13px;
+      font-family: 'Montserrat', sans-serif;
+      color: #572EE5;
+    }
+  
+    .dark{
+      font-family: 'Montserrat', sans-serif;
+      color: #572EE5;
+    }
+  
+    .inspirate{
+      font-family: 'Montserrat', sans-serif;
+      /*
+      color: #572EE5;
+      */
+      size: 35px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .searchbox{
+      border: none;
+      background: transparent;
+      margin-left: 54px;
+      height: 22px;
+      width: 210px;
+      size: 16px;
+      
+    }
+    
+    .search{
+      border: 1px solid #572EE5;
+      border-radius: 27px;
+      width: 551px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+    }
+  
+    .searchicon{
+      padding-left: 220px;
+    }
+  
+    .h1{
+      color: black;
+    }
+    
+    .ilu{
+      display: flex;
+      justify-content: center;
+    }
+    
+  /*
+  *   dark mode
+  */
+  
+  .darkmode{
+    background-color: black;
+    color: white;
+     
+   
+  }
+  
+  
+  /*
+  *   Sección search
+  */
+  
+  /*
+  *   Sección trending
+  */
+    .trending1{
+      font-family: 'Montserrat', sans-serif;
+      color: #572EE5;
+      size: 35px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .reactions{
+      font-family: 'Montserrat', sans-serif;
+      color: #572EE5;
+      size: 35px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .btn{
+      background: transparent;
+      background: url('/assets/scripts/icon-search.svg');
+      background-repeat: no-repeat;
+      font-size:0;
+      border: hidden;
+      padding: 15px;
+    
+      
+    }
+  
+    .container3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .searchGIFOS{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .trendingGIFOS{
+      background-color: #F3F5F8;
+      height: 640px;
+      width: 100%;
+    }
+  
+    .trending{
+  
+      height: 187px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .trend1{
+      color: #572EE5;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .trend2{
+      color: #000000;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    /*
+    *   Sección footer
+    */
+    .footer{
+   
+    }
+  
+  
+  }
+  
