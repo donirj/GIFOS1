@@ -7,110 +7,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
-
+    <title>CREAR GIFOS</title>
 </head>
-
 <body>
+    
     <header>
         <nav>
             <div class="barra lightbars">
             </div>
-        
+            
             <div class="row">
                 <div class="logo1"> 
-                    <img class="logo1" src="assets/scripts/logo-mobile.svg" alt="logo1">
+                    <a href="index.html"><img class="logo1"  src="assets/scripts/logo-mobile.svg" alt="logo1"></a>
                 </div>
                 <div class="hamIcon" onclick="toggleClass()">
                     <img src="" alt="">
-                    <div id="burger" class="burger-off "></div>
+                    <div id="burger" class="burger-off"></div>
+
                 </div> 
-                
-                <ul class="mainMenu ">
+                <ul class="mainMenu">
                     <li class="dark colordetexto" id="element1" onClick="javascript:changeText(1)" href="#">Modo Nocturno</li>
                     <div class="menubar"></div>
                     <li class="li1"><a id="idfav" class="nav2 colordetexto" href="favoritos.html">Favoritos</a></li>
                     <div class="menubar"></div>
                     <li class="li1"><a id="idmisgifos" class="nav2 colordetexto" href="MIS GIFOS.html">Mis GIFOS</a></li>
                     <div class="menubar"></div>
-                    <a href="CrearGifos.html" ><img onmouseover="NuevaImagen()" onmouseout="ViejaImagen()" class="btncrear" id="botoncrearhover" src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
-
+                    <a href="CrearGifos.html"><img onmouseover="NuevaImagen()" onmouseout="ViejaImagen()" class="btncrear" id="botoncrearhover"  src="./assets/scripts/button-crear-gifo.svg" alt=""></a>
                 </ul>
-            </div>
-
-            <div class="container3">
-                <h1 class="inspirate colordetexto">
-                    Inspirate, busca, guarda y crea <br> los mejores GIFOS
-                </h1>
-
-                <div class="ilu">
-                    <label for="menu-toggle">
-                        <img class="ilustra" src="assets/scripts/ilustra_header.svg" alt="ilustra">
-                    </label> 
-                </div>
-
-                    <form class="search" id="search-form">
-                        <div class="btn0">
-                            <input class="btn" type="submit" value="Buscar" >
-                        </div>
-                        <input 
-                            type="search"
-                            class="searchbox" 
-                            placeholder="Busca GIFOS y más" 
-                            id="search">
-                        <div class="suggestions"></div>  
-             
-                    </form>
-                    <div class="line"></div>  
-           
-
-                <div class="trendbox">
-                    <div class="trending1 ">
-                        <p class="trending1 colordetexto">
-                            Trending: 
-                        </p>
-                    </div>
-                    
-                    <div class="reactions">
-                        <p class="reactions colordetexto">
-                            Reactions, Entertainment, 
-                            Sports, Sticker, Artist
-                        </p>
-                    </div>
-                </div>
-
-                <div class="searchList" id="searchList">
-                </div>
-
             </div>
         </nav>
     </header>
 
-    <section class="searchGIFOS">
-        
-        
-    <script>
-
-
-    </script>
-
-    </section>
-
-    <section class="trendingGIFOS lighttrending">
-        <div>
-            <p class="trend1 colordetexto">Trending GIFOS</p>
-        </div>
-        <div>
-            <p class="trend2 ">Mira los últimos GIFOS de nuestra comunidad</p>
-        </div>
-
-        <div class="trending"  id="trending">
-            
-        </div>
-
-    </section>
-             
     
+    <section class="creaGIFOS">
+        <div class="video" id="video">
+            <div class="camara" ><img src="/assets/scripts/camara.svg" alt=""></div>
+            <div class="luz"><img src="/assets/scripts/element-luz-camara.svg" alt=""></div>
+            
+            <div class="videobox"></div>
+            <video id="videocamara" class="videocamara" src=""></video> 
+
+                <div class="acceso3 colordetexto" id="acceso3">
+                    <div><p id="demo" class="parrafo1 colordetexto">Aquí podrás crear tus propios GIFOS<br>
+                            <p id="demo" class="parrafo2 colordetexto">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
+                        </p></div>
+                        
+                </div>
+   
+            <div class="pelicula"><img class="pelicula" src="/assets/scripts/pelicula.svg" alt=""></div>
+          
+        </div>
+    
+        <div class="start">
+            <button onclick="show_hide()" class="dot1" id="dot1"><p class="uno colordetexto">1</p></button>
+            <span class="dot2"><p class="uno colordetexto">2</p></span>
+            <span class="dot3"><p class="uno colordetexto">3</p></span>
+
+        </div>
+     
+        <div class="start4">
+            <div class="barstart"></div>
+            <button  class="btnstart" id="btnstart" onclick="myFunction()">
+                <p class="comenzar">Comenzar</p>
+            </button>
+        </div>
+
+
+    </section>
+
+   
+    
+    <section class=" lighttrending">
+    </section>
+     
     <footer class="footer">
         <div class="foot ">
                 <p class="compartir ">Compartir en:</p>
@@ -129,7 +98,10 @@
     <div class="barra lightbars">
     </div>
 
-    <script type="text/javascript">
+
+    <script src="/assets/scripts/services/app.js"></script>
+
+    <script>
         function setNewImage()
         {
           document.getElementById("heart").src="./assets/scripts/icon-fav-hover.svg";
@@ -167,11 +139,6 @@
         }
       
      </script>
-    
-
-    <script src="/assets/scripts/services/app.js"></script>
-
-
 
 </body>
 </html>
