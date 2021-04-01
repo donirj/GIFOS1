@@ -3,3 +3,4 @@ git commit -am "<commit message>"
 git push
 
 rm -rf .git
+
